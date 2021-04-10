@@ -16,6 +16,6 @@ Group classifcation:
  5. HCC-like (>95% Hepatoid/HCC-like pattern
  In addition: All iCCA with > 5% CLC => iCCA with CLC pattern
 
-# Note CLC = bile ductular (BD) in some codes
+Note CLC = bile ductular (BD) in some codes
  
  
