@@ -1,23 +1,24 @@
+# Package load 
 library(tidyverse)
-library("survminer")
+library(survminer)
 library(haven)
 library(ggcorrplot)
 library(pander)
 library(psych)
-library("corrgram")
+library(corrgram)
 
-
+# Data preparation
 dat <- read_sav("/Volumes/Macintosh.D/ICC.paper/ICC with stem cell feature/OS.ICC.sav")
 dat2 <- read_sav("/Volumes/Macintosh.D/ICC.paper/ICC with stem cell feature/ICC.Final analysis.sav")
 head(dat2)
 attach(dat2)
 
+# Correlation analysis with psych package
 
 vars <- cbind (SBD, CLC, DPM, Rep.HGP, Size.cm, MVD.mm, Portal.tract, AVD.mm, u.AVD.mm, OS.m, DFS.m)
 a1 <- pairs.panels(vars, stars = TRUE,col.stars = "red", cex.cor = 0.8, cor=TRUE, show.legend=TRUE, colors = TRUE, adjust="BH", method = "pearson", alpha = .05)
 
 cocol<- colorRampPalette(c("#6D9EC1", "white", "#E46726"))
-
 corPlot(vars, stars=TRUE, cex =1, keep.par=FALSE, upper = TRUE, scale = TRUE, pval = TRUE, adjust="BH")
 
 
@@ -48,15 +49,22 @@ attach(dat)
 
 # Diagnosis5a in survirval analysis = Diagnosis5WHO in others
 
-# Definition: HCC-like = 100 %  hepatoid pattern
+# Evaluate each component in 5% increaments
+
+# Definition: HCC-like = >95% (100 %)  hepatoid pattern
 # Bile ductular (cholangiolocarcinoma >80% CLC pattern = WHO 2019)
-# Small bile duct > SBD component < 5 %, in this study actually SBD = 100 % SBD pattern 
+# Small bile duct > SBD component < 5 %, in this study actually SBD = >95% (100 %) SBD pattern 
 # Mixied with DPM => DPM pattern >=5% 
 # Mixed SBD-BD: 5% =< BD =< 80% 
+# iCCA with CLC >= 5% CLC (ductular) pattern
+
 # DFS: Disease free survival: The period from operation to first recurence or die of disease with either comimng first
+
 # Cases no recurence and alive at last followup were censored for DFS 
+
 # OS: Overal survival: Time from operation till death regardless of etiology 
 # Cases alive at last followup were censored for OS 
+
 # Recur = original data 
 # Recur2 = Original data + death of disease - stage 4 cases or case die within 1 month
 # Recur 3 = Original data + death of disease including stage 4
