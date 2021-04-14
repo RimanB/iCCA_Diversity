@@ -6,6 +6,8 @@ library(pander)
 library(psych)
 library("corrgram")
 
+hello
+
 dat <- read_sav("/Volumes/Macintosh.D/ICC.paper/ICC with stem cell feature/OS.ICC.sav")
 dat2 <- read_sav("/Volumes/Macintosh.D/ICC.paper/ICC with stem cell feature/ICC.Final analysis.sav")
 head(dat2)
