@@ -607,8 +607,7 @@ g34 <-  ggplot(dat3, mapping = aes(x = location, y = CD34, fill = Diagnosis.5), 
 cd34plot <- g34 + geom_boxplot(outlier.shape = NA) + 
   scale_fill_manual (values = GCOLOR) +
   
- geom_point(position=position_jitterdodge(jitter.width=0.02, dodge.width = 0.8), size = ,
-                                ) + 
+ geom_point(position=position_jitterdodge(jitter.width=0.02, dodge.width = 0.8), size = 2) + 
   
   scale_color_manual (values = GCOLOR) +
   
