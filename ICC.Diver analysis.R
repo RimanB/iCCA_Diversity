@@ -8,8 +8,8 @@ library(psych)
 library(corrgram)
 
 # Data preparation
-dat <- read_sav("/Volumes/Macintosh.D/ICC.paper/ICC with stem cell feature/OS.ICC.sav")
-dat2 <- read_sav("/Volumes/Macintosh.D/ICC.paper/ICC with stem cell feature/ICC.Final analysis.sav")
+dat <- read_sav("/Volumes/MacintoshD/iCCA/ICC_paper/iCCA_SCFs/OS.ICC.sav")
+dat2 <- read_sav("/Volumes/MacintoshD/iCCA/ICC_paper/iCCA_SCFs/ICC.Final analysis.sav")
 head(dat2)
 attach(dat2)
 
