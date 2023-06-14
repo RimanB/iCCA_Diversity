@@ -1,10 +1,15 @@
 # iCCA_Diversity
 
 Exploring analysis and final results
-iCCA classification: cell differentiation-based: Morphology and/or phenotype
-SBD: interlobular and steptal duct 
-CLC: Bile ductules/CoH
-DPM: DPM 
+
+iCCA classification: cell differentiation-based: Morphology and/or phenotype;
+
+SBD: interlobular and steptal duct; 
+
+CLC: Bile ductules/CoH;
+
+DPM: Ductal plate malformation
+
 HCC-like, iCCA with morphological features resembing classical HCC. 
 
 Evaluate in 5% increasements
