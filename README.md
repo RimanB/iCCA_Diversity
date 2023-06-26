@@ -4,7 +4,7 @@ Exploring analysis and final results
 
 iCCA classification: cell differentiation-based: Morphology and/or phenotype;
 
-SBD: interlobular and steptal duct; 
+SBD: small bile duct (interlobular to steptal duct); 
 
 CLC: Bile ductules/CoH;
 
